@@ -1,0 +1,54 @@
+.toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  max-width: 420px;
+  padding: 12px 12px 12px 14px;
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.14);
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+.success {
+  border-left: 4px solid var(--success);
+}
+
+.error {
+  border-left: 4px solid var(--error);
+}
+
+.message {
+  flex: 1;
+}
+
+.title {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.body {
+  font-size: 13px;
+  opacity: 0.95;
+}
+
+.close {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1;
+  padding: 2px 6px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.close:hover {
+  background: rgba(59, 130, 246, 0.12);
+}
